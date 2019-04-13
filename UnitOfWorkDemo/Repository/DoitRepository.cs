@@ -23,10 +23,7 @@ namespace UnitOfWorkDemo.Repository
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<Doit>> GetAllAsync()
-        {
-            throw new NotImplementedException();
-        }
+        public Task<IEnumerable<Doit>> GetAllAsync() => base.FindAllAsync();
 
         public Task<Doit> GetByIdAsync(Guid ownerId)
         {
